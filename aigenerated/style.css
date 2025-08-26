@@ -1,0 +1,155 @@
+/* ===== Base ===== */
+:root{
+  --bg1:#4f8cff;
+  --bg2:#a6e1fa;
+  --card:#ffffffE6;
+  --ink:#222;
+  --ink-2:#333;
+  --brand:#2563eb;
+  --ring:#93c5fd;
+}
+
+*{ box-sizing:border-box; }
+html,body{ height:100%; }
+body{
+  margin:0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color:var(--ink);
+  background: radial-gradient(1200px 800px at 10% -10%, #ffffff55, transparent 60%),
+              radial-gradient(1200px 800px at 110% 110%, #ffffff33, transparent 60%),
+              linear-gradient(135deg, var(--bg1) 0%, var(--bg2) 100%);
+  display:grid;
+  place-items:center;
+  padding:24px;
+}
+
+/* ===== Card / Container ===== */
+.container{
+  width:min(720px, 100%);
+  background:var(--card);
+  border-radius:20px;
+  padding:40px 32px;
+  box-shadow: 0 10px 40px rgba(0,0,0,.18);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  text-align:center;
+}
+
+/* ===== Hero ===== */
+.hero .avatar{
+  width:96px; height:96px;
+  border-radius:50%;
+  object-fit:cover;
+  display:block;
+  margin:0 auto 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,.2);
+}
+h1{
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  line-height:1.1;
+  margin: 4px 0 6px;
+  letter-spacing:1.5px;
+  color:var(--brand);
+}
+.tagline{
+  margin:0 auto 14px;
+  color:var(--ink-2);
+  font-size: clamp(1.05rem, 2.2vw, 1.2rem);
+}
+
+/* ===== Fancy Social Buttons ===== */
+.socials{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap:14px;
+  margin-top:22px;
+}
+
+/* Button shell */
+.social-btn{
+  --btn-bg: #ffffffb3;
+  --btn-border: #ffffff;
+  position:relative;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  padding:14px 16px;
+  border-radius:14px;
+  text-decoration:none;
+  color:#0f172a;
+  background:var(--btn-bg);
+  border:1px solid var(--btn-border);
+  box-shadow: 0 6px 20px rgba(0,0,0,.10);
+  overflow:hidden;
+  isolation:isolate;
+  transition: transform .25s ease, box-shadow .25s ease, background .25s ease, border-color .25s ease;
+}
+
+/* Gradient edge halo */
+.social-btn::before{
+  content:"";
+  position:absolute;
+  inset:-1px;
+  border-radius:inherit;
+  background:
+    radial-gradient(120px 60px at 0% 0%, #fff8, transparent 60%),
+    conic-gradient(from 180deg at 50% 50%, #7dd3fc, #c084fc, #f472b6, #60a5fa, #7dd3fc);
+  filter: blur(14px);
+  opacity:.0;
+  z-index:-1;
+  transition: opacity .35s ease;
+}
+
+/* subtle glossy line */
+.social-btn::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  border-radius:inherit;
+  background:linear-gradient(180deg, #ffffff80 0%, transparent 40%, transparent 60%, #00000014 100%);
+  mix-blend-mode:soft-light;
+  pointer-events:none;
+}
+
+/* Icon + label */
+.social-btn .icon{
+  display:grid; place-items:center;
+  font-size:0; line-height:0;
+}
+.social-btn .label{
+  font-weight:600;
+}
+
+/* Hover / Focus */
+.social-btn:hover,
+.social-btn:focus-visible{
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(0,0,0,.18);
+  border-color: #e2e8f0;
+  background:#fff;
+}
+.social-btn:hover::before,
+.social-btn:focus-visible::before{ opacity:.6; }
+
+/* Keyboard focus ring */
+.social-btn:focus-visible{
+  outline:none;
+  box-shadow: 0 0 0 3px var(--ring), 0 10px 30px rgba(0,0,0,.18);
+}
+
+/* ===== Footer ===== */
+.foot{
+  margin-top:18px;
+  color:#334155;
+}
+
+/* ===== Small screens ===== */
+@media (max-width: 500px){
+  .container{ padding:28px 18px; }
+}
+
+/* ===== Reduced motion ===== */
+@media (prefers-reduced-motion: reduce){
+  *{ animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition:none !important; }
+}
