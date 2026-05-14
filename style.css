@@ -95,7 +95,9 @@ p {
 }
 
 .fancy-btn {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
   padding: 0.85em 2.2em;
   font-size: 1.1rem;
   font-family: 'Montserrat', Arial, sans-serif;
@@ -111,6 +113,9 @@ p {
   text-decoration: none;
   margin-right: 0.5em;
   margin-left: 0.5em;
+}
+.fancy-btn i {
+  font-size: 1.3em;
 }
 .fancy-btn:hover {
   transform: translateY(-3px) scale(1.04);
