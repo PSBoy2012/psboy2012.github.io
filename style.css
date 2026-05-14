@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap');
 
 body {
-  min-height: 100vh;
+  min-height: 150vh;
   margin: 0;
   background: #000000;
   font-family: 'Roboto', Arial, sans-serif;
@@ -28,7 +28,7 @@ body {
 }
 
 .fancy-bg .circle1 {
-  width: 500px; height: 400px;
+  width: 500px; height: 500px;
   background: #00FF00;
   left: -100px; top: -100px;
   animation-delay: 0s;
