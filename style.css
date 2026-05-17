@@ -167,4 +167,11 @@ p {
   a:visited {
     color: rgb(0, 181, 6)
   }
+
+  .solid-separator {
+  border: none;
+  height: 3px;
+  background-color: #3498db; /* Change to your preferred hex color */
+  margin: 20px 0; /* Adds spacing above and below */
+ }
 }
