@@ -128,7 +128,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 0.1em;
+  gap: 0.0em;
   margin-top: 1em;
   position: fixed;
   left: 0px;
@@ -157,7 +157,7 @@ p {
     flex-wrap: wrap;
     justify-content: center;
     align-items: left;
-    gap: 0.1em;
+    gap: 0.0em;
   }
 
   /* links */
