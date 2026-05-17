@@ -135,10 +135,6 @@ p {
   top: 50%;
   transform: translateY(-50%);
   z-index: 10;
-  a:link {
-    color: #00FF00;
-  a:visited {
-    color: #00B507;
 }
 
 @media (max-width: 600px) {
@@ -166,9 +162,9 @@ p {
 
   /* links */
   a:link {
-    color: #00FF0A;
+    color: rgb(0, 255, 0)
   }
   a:visited {
-    color: #00B507;
+    color: rgb(0, 181, 6)
   }
 }
