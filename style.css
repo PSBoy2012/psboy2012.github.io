@@ -159,4 +159,13 @@ p {
     align-items: center;
     gap: 0.1em;
   }
+
+  /* links */
+  a:link {
+    color: rgb(0, 21, 13);
+  }
+  a:visited {
+    color: rgb(39, 197, 136);
+  }
 }
+
