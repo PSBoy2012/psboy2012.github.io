@@ -159,7 +159,7 @@ p {
     align-items: left;
     gap: 0.0em;
   }
-
+}
   /* links */
   a:link {
     color: rgb(0, 255, 0)
@@ -175,5 +175,20 @@ p {
   background-color: #00FF00; /* Change to your preferred hex color */
   margin: 20px auto; /* Adds spacing above and below */
   width: 100%;
+ }
+}
+
+.social-grid {
+  display: flex;
+  flex-direction: column;  /* Forces them to stack vertically, one under the other */
+  align-items: center;     /* Centers the column inside your box */
+  gap: 1px;                /* Puts exactly a 1px gap under each link */
+  margin-bottom: 1.5em;    /* Spacing before your separator line */
+}
+
+.social-grid a {
+  font-size: 1.25rem;      /* Matches your paragraph text size */
+  text-decoration: none;   /* Removes standard underlines for a cleaner look */
+  padding: 2px 0;          /* Tiny bit of internal breathing room */
  }
 }
