@@ -1,1 +1,23 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic stuff -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Embed stuff -->
+  <meta name="description" content="PSBoy2012's Website!">
+  <meta name="author" content="PSBoy2012">
+  <title>PSBoy2012</title>
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Styles + maybe js in the future? -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="fancy-bg">
+    <span class="circle1"></span>
+    <span class="circle2"></span>
+    <span class="circle3"></span>
+  </div>
+  <div class="container">
+    <h1>About me:3!.</h1>
