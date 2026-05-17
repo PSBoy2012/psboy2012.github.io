@@ -60,7 +60,7 @@ body {
   box-shadow: 0 12px 40px rgba(0,255,0,0.2);
   padding: 48px 36px 36px 36px;
   max-width: 420px;
-  text-align: left;
+  text-align: center;
   margin: 32px;
   backdrop-filter: blur(1px);
   border: 2px solid #00FF00;
@@ -156,7 +156,7 @@ p {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: left;
     gap: 0.1em;
   }
 
