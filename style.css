@@ -162,10 +162,9 @@ p {
 
   /* links */
   a:link {
-    color: rgb(0, 21, 13);
+    color: #00FF0A;
   }
   a:visited {
-    color: rgb(39, 197, 136);
+    color: #00B507;
   }
-}
 
