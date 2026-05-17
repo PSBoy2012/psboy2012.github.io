@@ -1,8 +1,8 @@
 <h1>About me:3!!</h1>
 
-this will basically never get touched again XD so no color's!.
+<p>this will basically never get touched again XD so no color's!.</p>
 
-About Me!
+<p>About Me!</p>
 <ul>
   <li>Age: 14</li>
   <li>Gender: Male</li>
