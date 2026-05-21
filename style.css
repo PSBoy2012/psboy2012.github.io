@@ -159,14 +159,12 @@ p {
     align-items: left;
     gap: 0.0em;
   }
-}
   /* links */
-  a:link {
-    color: rgb(0, 255, 0)
-  }
-  a:visited {
-    color: rgb(0, 181, 6)
-  }
+a:link {
+  color: rgb(161, 203, 255);
+}
+a:visited {
+  color: rgb(191, 155, 254);
 }
 
 .solid-separator {
@@ -176,7 +174,6 @@ p {
   margin: 20px auto; /* Adds spacing above and below */
   width: 100%;
  }
-}
 
 .social-grid {
   display: flex;
@@ -190,5 +187,4 @@ p {
   font-size: 1.25rem;      /* Matches your paragraph text size */
   text-decoration: none;   /* Removes standard underlines for a cleaner look */
   padding: 2px 0;          /* Tiny bit of internal breathing room */
- }
 }
