@@ -199,3 +199,10 @@ p {
   gap: 10px;
 }
 
+/* links */
+a:link {
+  color: #00ff00;
+}
+a:visited {
+  color: #00D402;
+}
