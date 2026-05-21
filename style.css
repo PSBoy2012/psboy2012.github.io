@@ -188,3 +188,10 @@ a:visited {
   text-decoration: none;   /* Removes standard underlines for a cleaner look */
   padding: 2px 0;          /* Tiny bit of internal breathing room */
 }
+
+a:link {
+  color: #00ff00;
+}
+a:visited {
+  color: #00D402;
+}
