@@ -161,10 +161,10 @@ p {
   }
   /* links */
 a:link {
-  color: rgb(161, 203, 255);
+  color: #00ff00;
 }
 a:visited {
-  color: rgb(191, 155, 254);
+  color: #00D402;
 }
 
 .solid-separator {
