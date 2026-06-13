@@ -29,19 +29,19 @@ body {
 
 .fancy-bg .circle1 {
   width: 500px; height: 400px;
-  background: #00FF00;
+  background: #A020F0;
   left: -100px; top: -100px;
   animation-delay: 0s;
 }
 .fancy-bg .circle2 {
   width: 300px; height: 300px;
-  background: #00FF00;
+  background: #A020F0;
   right: -80px; top: 60px;
   animation-delay: 2s;
 }
 .fancy-bg .circle3 {
   width: 350px; height: 350px;
-  background: #00FF00;
+  background: #A020F0;
   left: 50%; bottom: -120px;
   transform: translateX(-50%);
   animation-delay: 4s;
@@ -57,22 +57,22 @@ body {
   z-index: 1;
   background: #000000;
   border-radius: 24px;
-  box-shadow: 0 12px 40px rgba(0,255,0,0.2);
+  box-shadow: 0 12px 40px rgb(106, 27, 154);
   padding: 48px 36px 36px 36px;
   max-width: 420px;
-  text-align: left;
+  text-align: center;
   margin: 32px;
   backdrop-filter: blur(1px);
-  border: 2px solid #00FF00;
+  border: 2px solid #A020F0;
 }
 
 h1 {
   font-family: 'Montserrat', Arial, sans-serif;
   font-size: 2.8rem;
-  color: #00FF00;
+  color: #A020F0;
   margin-bottom: 0.3em;
   letter-spacing: 2px;
-  text-shadow: 0 2px 12px #00FF0055;
+  text-shadow: 0 2px 12px #6A1B9A;
   animation: fadeInDown 1s cubic-bezier(.77,0,.18,1.01);
 }
 
@@ -83,7 +83,7 @@ h1 {
 
 p {
   font-size: 1.25rem;
-  color: #00FF00;
+  color: #A020F0;
   margin-top: 0;
   margin-bottom: 1.5em;
   animation: fadeInUp 1.2s cubic-bezier(.77,0,.18,1.01);
@@ -102,11 +102,11 @@ p {
   font-size: 1.1rem;
   font-family: 'Montserrat', Arial, sans-serif;
   font-weight: 700;
-  color: #00FF00;
+  color: #A020F0;
   background: #000000;
-  border: 2px solid #00FF00;
+  border: 2px solid #A020F0;
   border-radius: 32px;
-  box-shadow: 0 4px 16px #00FF0033;
+  box-shadow: 0 4px 16px #6A1B9A;
   cursor: pointer;
   transition: transform 0.15s, box-shadow 0.15s, background 0.3s;
   margin-top: 1em;
@@ -119,8 +119,8 @@ p {
 }
 .fancy-btn:hover {
   transform: translateY(-3px) scale(1.04);
-  box-shadow: 0 8px 32px #00FF0055;
-  background: #00FF00;
+  box-shadow: 0 8px 32px #6A1B9A;
+  background: #A020F0;
   color: #000000;
 }
 
@@ -128,7 +128,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 0.1em;
+  gap: 0.0em;
   margin-top: 1em;
   position: fixed;
   left: 0px;
@@ -149,5 +149,49 @@ p {
     padding: 0.7em 1.5em;
     font-size: 0.9rem;
     margin: 0.3em;
-   }
-  )
+  }
+  .social-links {
+    position: static;
+    transform: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: left;
+    gap: 0.0em;
+  }
+  /* links */
+a:link {
+  color: #A020F0;
+}
+a:visited {
+  color: #6A1B9A;
+}
+
+.solid-separator {
+  border: none;
+  height: 3px;
+  background-color: #A020F0; /* Change to your preferred hex color */
+  margin: 20px auto; /* Adds spacing above and below */
+  width: 100%;
+ }
+
+.social-grid {
+  display: flex;
+  flex-direction: column;  /* Forces them to stack vertically, one under the other */
+  align-items: center;     /* Centers the column inside your box */
+  gap: 1px;                /* Puts exactly a 1px gap under each link */
+  margin-bottom: 1.5em;    /* Spacing before your separator line */
+}
+
+.social-grid a {
+  font-size: 1.25rem;      /* Matches your paragraph text size */
+  text-decoration: none;   /* Removes standard underlines for a cleaner look */
+  padding: 2px 0;          /* Tiny bit of internal breathing room */
+}
+
+a:link {
+  color: #A020F0;
+}
+a:visited {
+  color: #6A1B9A;
+}
